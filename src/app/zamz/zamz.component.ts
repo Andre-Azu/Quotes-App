@@ -9,7 +9,7 @@ import { Quote } from '../quote';
 })
 export class ZamzComponent implements OnInit {
   zamz:Quote[] = [
-  new Quote(1,'Sam Kiprono', "Think big and dont listen to people who tell you it cant be done."),
+  new Quote(1,'Sam Kiprono', 'Think big and dont listen to people who tell you it cant be done.'),
   new Quote(2,'Andre Azu', 'We become what we think about.'),
   new Quote(3,'John Kabuga', 'The person who says it cannot be done should not interrupt the person who is doing it.'),
   
@@ -20,7 +20,7 @@ export class ZamzComponent implements OnInit {
 }
   quoteDelete(isComplete: boolean, index: number){
   if (isComplete) {
-    let toDelete=confirm('Are you sure?');
+    let toDelete=confirm('yes');
     if (toDelete){
       this.zamz.splice(index,1)
     }

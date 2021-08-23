@@ -3,15 +3,13 @@
     <hr>
     <ul>
         <div *ngFor='let list of zamz; let i = index'>
-        <li>{{list.author}}</li>
+        <li>{{list}}</li>
         <button (click)='toggleDetails(i)'>hide/show</button>        
        
        
         <div>
-            <app-quotedetail  *ngIf='list.showQuote' [list]='list' (isComplete) = 'quoteDelete($event,i)'></app-quotedetail>
-        </div> 
-        
-    </div>
+            <app-quotedetail  *ngIf='list.showQuote'  (isComplete) = 'quoteDelete(true,i)'></app-quotedetail>
+        </div> </div>
     </ul>
   </div>
 
