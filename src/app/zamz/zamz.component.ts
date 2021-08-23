@@ -15,7 +15,7 @@ export class ZamzComponent implements OnInit {
   
 ];
 
-toggleDetails(index){
+toggleDetails(index: number){
   this.zamz[index].showQuote = !this.zamz[index].showQuote;
 }
 

@@ -5,11 +5,11 @@
         <div *ngFor='let list of zamz;let i = index'>
         <li>{{list.author}}</li>
         <button (click)='toggleDetails(i)'>hide/show</button>
-        <app-goaldetail *ngIf='goal.showQuote' [list]='list'></app-goaldetail>
-  </div>
-        
+        <div *ngIf='list.showQuote' >
+            <app-quotedetail  [list]='list'></app-quotedetail>
+        </div>        
+        </div>        
     </ul>
   </div>
 
-  
   
