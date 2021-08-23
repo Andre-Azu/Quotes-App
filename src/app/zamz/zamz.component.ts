@@ -15,8 +15,16 @@ export class ZamzComponent implements OnInit {
   
 ];
 
-toggleDetails(index: number){
+  toggleDetails(index: number){
   this.zamz[index].showQuote = !this.zamz[index].showQuote;
+}
+  quoteDelete(isComplete: boolean, index: number){
+  if (isComplete) {
+    let toDelete=confirm('Are you sure?');
+    if (toDelete){
+      this.zamz.splice(index,1)
+    }
+  }
 }
 
   constructor() { }
