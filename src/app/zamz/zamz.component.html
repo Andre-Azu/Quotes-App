@@ -2,9 +2,14 @@
     <h1>All Quotes</h1>
     <hr>
     <ul>
-        <li *ngFor='let list of zamz'>
-          {{list.author}}
-          <app-quotedetail [list]='list'> </app-quotedetail>
-        </li>
+        <div *ngFor='let list of zamz;let i = index'>
+        <li>{{list.author}}</li>
+        <button (click)='toggleDetails(i)'>hide/show</button>
+        <app-goaldetail *ngIf='goal.showQuote' [list]='list'></app-goaldetail>
+  </div>
+        
     </ul>
   </div>
+
+  
+  
