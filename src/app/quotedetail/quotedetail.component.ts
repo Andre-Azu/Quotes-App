@@ -25,7 +25,7 @@ export class QuotedetailComponent implements OnInit {
   }
 
   lessLike(){
-    this.buttonLess --
+    this.buttonLess ++  
   }
   
   constructor() { }
