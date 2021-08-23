@@ -1,4 +1,8 @@
+import { identifierModuleUrl } from "@angular/compiler";
+
 export class Quote {
     id: number | undefined;
-    name: string | undefined;
+    author: string | undefined
+    quote: string | undefined;
+
   }
