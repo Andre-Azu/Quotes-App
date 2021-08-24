@@ -12,5 +12,6 @@ Copy the deployment link on the about.
 Paste the deployment ink on the search engine.
 Access the app.
 # link to the live website:
+https://andre-azu.github.io/quotes-app/
 
 # copyright and license information
