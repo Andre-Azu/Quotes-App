@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ZamzComponent } from './zamz/zamz.component';
 import { QuotedetailComponent } from './quotedetail/quotedetail.component';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { FormsModule } from '@angular/forms';
 // import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
@@ -12,6 +14,8 @@ import { QuotedetailComponent } from './quotedetail/quotedetail.component';
     AppComponent,
     ZamzComponent,
     QuotedetailComponent,
+    QuoteFormComponent,
+    // FormsModule
     // DateCountPipe
   ],
   imports: [

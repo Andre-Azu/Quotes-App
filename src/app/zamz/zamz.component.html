@@ -1,7 +1,11 @@
 
     <h1>All Quotes</h1>
-    <hr>
-    <ul>
+    <hr> 
+    <div>
+            <app-quote-form></app-quote-form>
+    </div>
+    
+    <ol>
         <div *ngFor='let list of zamz; let i = index'>
             <li>{{list.name}}'s quote about {{list.topic | uppercase}} </li>
             <div>
@@ -12,6 +16,9 @@
             <div *ngIf='list.showQuote'>
             <app-quotedetail (isComplete)='quoteDelete($event, i)' [list]='list'></app-quotedetail>
             </div>
+        </div>
+       
+    
        
         
         
