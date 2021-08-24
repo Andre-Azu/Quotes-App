@@ -15,12 +15,13 @@ import { FormsModule } from '@angular/forms';
     ZamzComponent,
     QuotedetailComponent,
     QuoteFormComponent,
-    // FormsModule
     // DateCountPipe
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
