@@ -15,12 +15,19 @@ export class ZamzComponent implements OnInit {
   
 ];
 
+    addNewQuote(list: Quote){
+    let listLength = this.zamz.length;
+    list.id = listLength+1;
+    // list.completeDate = new Date(goal.completeDate)
+    this.zamz.push(list)
+  }
+
    toggleDetails(index: number){
    this.zamz[index].showQuote = !this.zamz[index].showQuote;
  }
   quoteDelete(isComplete: boolean, index: number){
   if (isComplete) {
-    let toDelete=confirm('yes');
+    let toDelete=confirm('are you sure?');
     if (toDelete){
       this.zamz.splice(index,1)
     }
