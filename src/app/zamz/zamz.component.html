@@ -1,16 +1,22 @@
-<div>
+
     <h1>All Quotes</h1>
     <hr>
     <ul>
         <div *ngFor='let list of zamz; let i = index'>
-        <li>{{list}}</li>
-        <button (click)='toggleDetails(i)'>hide/show</button>        
+            <li>{{list.name}}'s quote about {{list.topic | uppercase}} </li>
+            <div>
+    
+            <button (click)='toggleDetails(i)'>hide/show</button>        
+            </div>
+   
+            <div *ngIf='list.showQuote'>
+            <app-quotedetail (isComplete)='quoteDelete($event, i)' [list]='list'></app-quotedetail>
+            </div>
        
+        
+        
        
-        <div>
-            <app-quotedetail  *ngIf='list.showQuote'  (isComplete) = 'quoteDelete(true,i)'></app-quotedetail>
-        </div> </div>
-    </ul>
-  </div>
+    
+
 
   
