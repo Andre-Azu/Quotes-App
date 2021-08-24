@@ -7,6 +7,7 @@ import { ZamzComponent } from './zamz/zamz.component';
 import { QuotedetailComponent } from './quotedetail/quotedetail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
+import { UnderlineDirective } from './underline.directive';
 // import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
@@ -15,6 +16,7 @@ import { FormsModule } from '@angular/forms';
     ZamzComponent,
     QuotedetailComponent,
     QuoteFormComponent,
+    UnderlineDirective,
     // DateCountPipe
     
   ],
