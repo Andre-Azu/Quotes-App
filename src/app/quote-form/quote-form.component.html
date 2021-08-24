@@ -12,7 +12,7 @@
                 </div>   
             <div class="form-group"> 
                 <label for="topic">Topic of the quote</label>
-                <input type="text" required class="form-control" id="topic" [(ngModel)]="newQuote.topic" name="name">
+                <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.topic" name="name">
                 <!-- <textarea class="form-control" id="topic" rows="1" required></textarea> --> 
             </div>
             <div class="form-group">  
@@ -24,7 +24,7 @@
                 <label for="complete">Completion</label>
                 <input type='date' id="complete" required>  
             </div> -->
-            <button type="submit" class="btn btn-primary">Add Goal</button>
+            <button type="submit" class="btn btn-primary" id="submit">Add Quote</button>
             <form (ngSubmit)='submitQuote()' #goalForm='ngForm'></form>
         <!-- </form> -->
     </div>

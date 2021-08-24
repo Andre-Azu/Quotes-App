@@ -1,0 +1,34 @@
+*{
+    display: block;
+    border: 0;
+    padding: 0.8em 1.5em;
+    background-color: #f2f2f2;    
+    text-decoration: none;
+}
+
+div{
+    text-align: center;
+    margin: 3%;
+    border: 3%;
+    border-color: brown;
+    
+}
+
+form{
+    background-color: bisque;
+}
+input#name{
+    display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  border-radius: 0.25em;
+  min-width: 7em;
+  background-color: #444444;
+ 
+  text-align: center;
+  text-decoration: none !important;
+  vertical-align: bottom;
+}
+
+button#submit{   
+    background-color: #888888;
+}
