@@ -10,7 +10,7 @@
             <li>{{list.name}}'s quote about {{list.topic | uppercase}} </li>
             <div>
     
-            <button (click)='toggleDetails(i)'>hide/show</button>        
+            <button class="btn btn-primary" (click)='toggleDetails(i)'>hide/show</button>        
             </div>
    
             <div *ngIf='list.showQuote'>
