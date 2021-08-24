@@ -1,0 +1,14 @@
+i#like {
+    text-shadow:1px 2px 10px green;
+    padding-left: 10PX;
+}
+
+i#dislike{
+   text-shadow:1px 2px 10px orange; 
+   padding-left: 20px;   
+}
+
+i#delete{
+    text-shadow:1px 2px 10px red; 
+   padding-left: 300px;
+}

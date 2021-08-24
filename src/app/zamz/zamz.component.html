@@ -1,29 +1,27 @@
-<div class="container">
-    
+<div class="container">    
     <h1>All Quotes</h1>
+    <hr>
     <div class="row">
-        <div class="column"></div>
-    </div>
-</div>
-    <hr> 
-    <div>
-        <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
-    </div>
-    
-    <ol>
-        <div *ngFor='let list of zamz; let i = index'>
-            <li>{{list.name}}'s quote about {{list.topic | uppercase}} </li>
-            <div>
-    
-            <button class="btn btn-primary" (click)='toggleDetails(i)'>hide/show</button>        
-            </div>
-   
-            <div *ngIf='list.showQuote'>
-            <app-quotedetail (isComplete)='quoteDelete($event, i)' [list]='list'></app-quotedetail>
-            </div>
+        <div class="column-md-6">
+            <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>            
         </div>
-       
+        <div class="column-md-6">
+            <ol>
+            <div *ngFor='let list of zamz; let i = index'>
+                <li>{{list.name}}'s quote about {{list.topic | uppercase}} </li>
+                    <div>        
+                        <button class="btn btn-primary" (click)='toggleDetails(i)'>hide/show</button>        
+                    </div>    
+                <div *ngIf='list.showQuote'>
+                <app-quotedetail (isComplete)='quoteDelete($event, i)' [list]='list'></app-quotedetail>
+                </div>
+            </div>
+      
+
     
+    
+    
+
        
         
         
