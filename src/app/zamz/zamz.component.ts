@@ -12,6 +12,8 @@ export class ZamzComponent implements OnInit {
   new Quote(1,'Sam Kiprono','faith', 'Think big and dont listen to people who tell you it cant be done.'),
   new Quote(2,'Andre Azu','self knowledge', 'We become what we think about.'),
   new Quote(3,'John Kabuga','endurance', 'The person who says it cannot be done should not interrupt the person who is doing it.'),
+  new Quote(3,'Stephen King','the impossible','Get busy living or get busy dying.'),
+  new Quote(3,' Mae West','fun','You only live once, but if you do it right, once is enough.')
   
 ];
 
